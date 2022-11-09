@@ -1,0 +1,72 @@
+body 
+{
+    margin: 0;
+    
+}
+.section1
+{
+    background-color: bisque;
+    height: 100vh;
+}
+.section2
+{
+    background-color: darkkhaki;
+    height: 100vh;
+}
+
+/* Footer */
+
+.logoForFooter img {
+    max-width: 95vw;
+    height: auto;
+    width: 130px;
+}
+
+footer {
+    padding: 8rem 0 3rem 0;
+    font-size: 0.8rem;
+    color: white;
+    background-color: black; 
+   
+  }
+  
+  .rightFooter img {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #222326;
+}
+
+.displayFlex
+{
+    display: flex;
+}
+.centerContent
+{
+    justify-content: center;
+}
+.leftFooter
+{
+    justify-content: space-around;
+    flex-basis: 40%;
+}
+.modifiedFlag
+{
+    flex-basis: 56%;
+}
+.flag
+{
+    justify-content: flex-end;
+}
+.leftFooter3
+{
+    justify-content: space-around;
+    flex-basis: 40%;
+}
+.flexWrap
+{
+    flex-wrap: wrap;
+}
+.row3
+{
+    margin-top: 5rem;
+}
