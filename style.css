@@ -1,0 +1,256 @@
+body 
+{
+    margin: 0;
+}
+
+nav .logo img
+{
+    max-width: 95vw;
+    height: auto;
+    width: 130px;
+}
+nav
+{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+a 
+{
+    margin: 0.4rem;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 1rem;
+}
+.navBar
+{
+    display: flex;
+    align-items: center;
+
+}
+a:hover
+{
+    color: green;
+}
+.logo
+{
+    padding: 1rem;
+}
+/*=============================== */
+section
+{
+    display: flex;
+    padding: 10px 10%;
+    justify-content: center;
+    flex-wrap: wrap; /* wrap to the 2nd line of the next block on different devices */
+}   
+.section1
+{
+    background-color: #ff4632;
+    padding: 5rem 0 5rem 0;
+}
+
+section:nth-of-type(2) /*2nd of type section = specify class*/
+{
+      background-color:  #cb1582;
+}
+section:nth-of-type(3) /*2nd of type section = specify class*/
+{
+      background-color:  #2d46b9;
+}
+
+/* Section 1 */
+.contentText
+{
+    flex-basis: 40%;
+    /* justify-content: space-evenly; means nothing because the contentText is not flex;
+} */
+}
+.contentText > h1 
+{
+    font-size: 60px;
+    margin-block: 0;
+    color: black;
+}
+.tittle1
+{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+.section1 > img
+{
+    width: 	450px ;
+    height: 450px;
+    justify-content: center; 
+    align-self: center;
+    box-sizing: border-box;
+
+}
+.contentText > p
+{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 16px;
+}
+.button {
+	margin : 20px 0 20px 0;
+	border-radius: 500px;
+	font-size: 14px;
+	font-weight: 700;
+	padding: 17px 48px;
+	background-color: #000;
+	color: #ffffff;
+	letter-spacing: 2px;
+	border: 0;
+}
+#bottomText
+{
+    font-size: 13px;
+}
+
+/* Section 2 */
+.container 
+{
+    padding: 8rem 0 8rem 0;
+}
+.bottom-box {
+    position: relative;
+    width: 527px;
+    height: 320px;
+    background: linear-gradient(359.37deg, #000 3.09%, #ff4632 22.4%, #fae62d 46.64%, #9bf0e1 62.15%, #a0c3d2 79.91%, #4100f5 99.49%);
+    /* background-repeat: no-repeat; */
+}
+.top-box
+{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: flex-end;
+    padding: 40px;
+    background-color: #a5ffef;
+    width: 417px;
+    height: 404px;
+    color: #cb1582 !important;
+    font-size: 64px;
+    font-weight: 600;
+}
+
+
+#textContainer2 > p, h1, button
+{
+     color: #a5ffef;
+}
+#textContainer2 > h1{
+    font-size: 64px;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+}
+.header 
+{
+    margin-block-end: 0;
+}
+
+#textContainer2
+{
+    margin-left: 3rem;
+}
+#textContainer2 .button
+{
+    background-color: #a5ffef;
+    color: #cb1582 !important;
+}
+/* Section 3 */
+#section3
+{
+    background-image: url('LiE_circles.svg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: auto, auto;
+    justify-content: space-around;
+   color: #1ed760;
+   min-height: 500px;
+}
+
+.title2 {
+    font-size: 64px;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+    margin-bottom: 2rem;
+}
+
+.textContainer3 .button
+{
+    background-color:#1ed760;
+    color: #2d46b9;
+    margin-top: 1rem;
+}
+.title1
+{
+    margin-bottom: 3rem;
+}
+
+.container3
+{
+    padding: 8rem 0 8rem 0;
+    flex-basis: 35%;
+}
+/* Footer */
+
+.logoForFooter img {
+    max-width: 95vw;
+    height: auto;
+    width: 130px;
+}
+
+footer {
+    padding: 8rem 0 3rem 0;
+    font-size: 0.8rem;
+    color: white;
+    background-color: black; 
+  }
+  
+  .rightFooter img {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #222326;
+}
+
+.displayFlex
+{
+    display: flex;
+}
+.centerContent
+{
+    justify-content: center;
+}
+.leftFooter
+{
+    justify-content: space-around;
+    flex-basis: 40%;
+}
+.modifiedFlag
+{
+    flex-basis: 56%;
+}
+.flag
+{
+    justify-content: flex-end;
+}
+.leftFooter3
+{
+    justify-content: space-around;
+    flex-basis: 40%;
+}
+
+.row3
+{
+    margin-top: 5rem;
+}
