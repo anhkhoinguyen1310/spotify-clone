@@ -13,6 +13,7 @@ nav
 {
     background-color: black;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px 10%;
     position: sticky;
@@ -121,7 +122,7 @@ section:nth-of-type(3) /*2nd of type section = specify class*/
 }
 .bottom-box {
     position: relative;
-    width: 527px;
+    width: 600px;
     height: 320px;
     background: linear-gradient(359.37deg, #000 3.09%, #ff4632 22.4%, #fae62d 46.64%, #9bf0e1 62.15%, #a0c3d2 79.91%, #4100f5 99.49%);
     /* background-repeat: no-repeat; */
