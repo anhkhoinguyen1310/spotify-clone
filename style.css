@@ -250,7 +250,10 @@ footer {
     justify-content: space-around;
     flex-basis: 40%;
 }
-
+.flexWrap
+{
+    flex-wrap: wrap;
+}
 .row3
 {
     margin-top: 5rem;
