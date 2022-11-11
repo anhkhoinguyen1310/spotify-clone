@@ -136,60 +136,47 @@
   
     <!-- ]]
       * Returns the longest number of consecutive mode (WET or DR<span class="_ _0"></span>Y)
-      days in forecast.</div>
-    */</div>
-    ">public static int lengthOfLongestwetdrySpell (int[] forecast,int mode) {</div>
-    int length_count = 0;</div>
-    int temp = 0;</div>
-    for (int i= 0; i&lt; forecast.length-1; i++) {</div>
-    if (forecast[i] == forecast[i+1] &amp;&amp; forecast[i] == mode)  temp++;</div>
-    else {</div>
-    if (temp &gt;= length_count) length_count = temp;</div>
-    temp = 0;</div>
-    }</div>
-    }</div>
-    ">return length_count+1;</div>
-    }</div>
-    /*</div>
-    >* Reads numberOfLocations probabilites into arrayT<spanclass="_ _2"></span>oFill.</div>
-    /div>
-    * T<span class="_ _1"></span>ransition probabilities fileformat:</div>
-    * Longitude Latitude January February March <spanclass="_ _1"></span>April May June July <span class="_ _0"></span>August</div>
-    September October November December</div>
-    * -97.58 26.02 0.76 0.75 0.77 0.74 0.80 0.86 0.94 0.97 0.89 </div>
-    0.77 0.74 0.77</div>
-    */</div>
-      public static void readT<spanclass="_ _0"></span>ransitionProbabilities ( double[][] arrayT<span class="_ _2"></span>oFill,</div>
-      int numberOfLocations ) {</div>
-      int row = 0;</div>
-      while (row &lt; numberOfLocations) {</div>
-      arrayT<span class="_ _2"></span>oFill[row][0]=StdIn.readDouble(); // Longitute</div>
-      arrayT<span class="_ _2"></span>oFill[row][1] =
-    StdIn.readDouble(); // Latitude</div> <div class="t m0 x6 h2 y6d ff1 fs0 fc0 sc0 ls0 ws2">arrayT<span class="_ _2"></span>oFill[row][2] =
-      StdIn.readDouble(); // January</div>
-    <div class="t m0 x6 h2 y6e ff1 fs0 fc0 sc0 ls0 ws2">arrayT<span class="_ _2"></span>oFill[row][3] =
-      StdIn.readDouble(); // February</div>
-    <div class="t m0 x6 h2 y6f ff1 fs0 fc0 sc0 ls0 ws2">arrayT<span class="_ _2"></span>oFill[row][4] =
-      StdIn.readDouble(); // March</div>
-    <div class="t m0 x6 h2 y70 ff1 fs0 fc0 sc0 ls0 ws2">arrayT<span class="_ _2"></span>oFill[row][5] =
-      StdIn.readDouble(); // <span class="_ _1"></span>April</div>
-    <div class="t m0 x6 h2 y71 ff1 fs0 fc0 sc0 ls0 ws2">arrayT<span class="_ _2"></span>oFill[row][6] =
-      StdIn.readDouble(); // May</div>
-    <div class="t m0 x6 h2 y72 ff1 fs0 fc0 sc0 ls0 ws2">arrayT<span class="_ _2"></span>oFill[row][7] =
-      StdIn.readDouble(); // June</div>
-    <div class="t m0 x6 h2 y73 ff1 fs0 fc0 sc0 ls0 ws2">arrayT<span class="_ _2"></span>oFill[row][8] =
-      StdIn.readDouble(); // July</div>
-    <div class="t m0 x6 h2 y74 ff1 fs0 fc0 sc0 ls0 ws2">arrayT<span class="_ _2"></span>oFill[row][9] =
-      StdIn.readDouble(); // <span class="_ _1"></span>August</div>
-    <div class="t m0 x6 h2 y75 ff1 fs0 fc0 sc0 ls0 ws2">arrayT<span class="_ _2"></span>oFill[row][10] =
-      StdIn.readDouble(); // Septmber</div>
-    <div class="t m0 x6 h2 y76 ff1 fs0 fc0 sc0 ls0 ws2">arrayT<span class="_ _2"></span>oFill[row][1<span
-        class="_ _1"></span>1] = StdIn.readDouble(); // October</div>
-    <div class="t m0 x6 h2 y77 ff1 fs0 fc0 sc0 ls0 ws2">arrayT<span class="_ _2"></span>oFill[row][12] =
-      StdIn.readDouble(); // November</div>
-    <div class="t m0 x6 h2 y78 ff1 fs0 fc0 sc0 ls0 ws2">arrayT<span class="_ _2"></span>oFill[row][13] =
-      StdIn.readDouble(); // December row += 1;
-  </; -->
+      days in forecast.
+    */
+    public static int lengthOfLongestwetdrySpell (int[] forecast,int mode) {
+    int length_count = 0;
+    int temp = 0;
+    for (int i= 0; i&lt; forecast.length-1; i++) {
+    if (forecast[i] == forecast[i+1] &amp;&amp; forecast[i] == mode)  temp++;
+    else {
+    if (temp &gt;= length_count) length_count = temp;
+    temp = 0;
+    }
+    }
+    return length_count+1;
+    }
+     /*
+    * Reads numberOfLocations probabilites into arrayToFill.
+    * 
+    * Transition probabilities file format:
+    * Longitude	Latitude	January	February	March	April	May	June	July	August	September	October	November	December 
+    * -97.58	    26.02	    0.76	0.75	    0.77	0.74	0.80	0.86	0.94	0.97	0.89	0.77	0.74	0.77
+    */ 
+    public static void readTransitionProbabilities ( double[][] arrayToFill, int numberOfLocations ) {
+        int row = 0;
+        while (row < numberOfLocations) {
+            arrayToFill[row][0] = StdIn.readDouble();  // Longitute
+            arrayToFill[row][1] = StdIn.readDouble();  // Latitude
+            arrayToFill[row][2] = StdIn.readDouble();  // January
+            arrayToFill[row][3] = StdIn.readDouble();  // February
+            arrayToFill[row][4] = StdIn.readDouble();  // March
+            arrayToFill[row][5] = StdIn.readDouble();  // April
+            arrayToFill[row][6] = StdIn.readDouble();  // May
+            arrayToFill[row][7] = StdIn.readDouble();  // June
+            arrayToFill[row][8] = StdIn.readDouble();  // July
+            arrayToFill[row][9] = StdIn.readDouble();  // August
+            arrayToFill[row][10] = StdIn.readDouble(); // Septmber
+            arrayToFill[row][11] = StdIn.readDouble(); // October
+            arrayToFill[row][12] = StdIn.readDouble(); // November
+            arrayToFill[row][13] = StdIn.readDouble(); // December
+            row += 1;
+        }
+    } -->
+      
 </body>
-
 </html>

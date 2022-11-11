@@ -3,6 +3,36 @@ body
     margin: 0;
     
 }
+nav
+{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 10%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+a 
+{
+    margin: 0.4rem;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 1rem;
+}
+.navBar
+{
+    display: flex;
+    align-items: center;
+
+}
+a:hover
+{
+    color: green;
+}
+
 .section1
 {
     background-color: bisque;
